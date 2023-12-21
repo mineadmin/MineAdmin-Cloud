@@ -8,6 +8,17 @@
       <sourceFolder url="file://$MODULE_DIR$/servers/System" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/servers/System/installer/resources" isTestSource="false" packagePrefix="App" />
       <sourceFolder url="file://$MODULE_DIR$/servers/System/test" isTestSource="true" packagePrefix="HyperfTest" />
+      <sourceFolder url="file://$MODULE_DIR$/gateway/admin-gateway" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/gateway/admin-gateway/test" isTestSource="true" packagePrefix="HyperfTest" />
+      <sourceFolder url="file://$MODULE_DIR$/gateway/api-gateway" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/gateway/api-gateway/test" isTestSource="true" packagePrefix="HyperfTest" />
+      <sourceFolder url="file://$MODULE_DIR$/servers/admin-system-server" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/servers/admin-system-server/test" isTestSource="true" packagePrefix="HyperfTest" />
+      <sourceFolder url="file://$MODULE_DIR$/servers/common-setting-server" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/servers/common-setting-server/test" isTestSource="true" packagePrefix="HyperfTest" />
+      <excludeFolder url="file://$MODULE_DIR$/servers/admin-system-server/runtime" />
+      <excludeFolder url="file://$MODULE_DIR$/servers/admin-system-server/vendor" />
+      <excludeFolder url="file://$MODULE_DIR$/servers/common-setting-server/vendor" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
