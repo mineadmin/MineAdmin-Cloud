@@ -5,8 +5,8 @@
 # @contact  group@hyperf.io
 # @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
 
-FROM hyperf/hyperf:8.1-alpine-v3.18-swoole
-LABEL maintainer="Hyperf Developers <group@hyperf.io>" version="1.0" license="MIT" app.name="Hyperf"
+FROM hyperf/hyperf:8.3-alpine-v3.19-swoole
+LABEL maintainer="Death-Satan <death@qq.com>" version="1.0" license="MIT" app.name="admin-gateway"
 
 ##
 # ---------- env settings ----------
@@ -47,7 +47,9 @@ WORKDIR /opt/www
 # RUN composer install --no-dev --no-scripts
 
 COPY . /opt/www
-RUN composer install --no-dev -o && php bin/hyperf.php
+RUN composer config -g repos.packagist composer https://mirrors.tencent.com/composer/ &&  \
+    composer install -vvv &&  \
+    php bin/hyperf.php
 
 EXPOSE 9501
 

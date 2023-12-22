@@ -681,16 +681,16 @@
         },
         {
             "name": "hyperf/amqp",
-            "version": "v3.1.0",
+            "version": "v3.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/amqp.git",
-                "reference": "de0a82343264217ffc3c1f180d446fc5998f84d1"
+                "reference": "dae558843dbb1b12b5f7e7a9e01af063de4be3ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/amqp/zipball/de0a82343264217ffc3c1f180d446fc5998f84d1",
-                "reference": "de0a82343264217ffc3c1f180d446fc5998f84d1",
+                "url": "https://api.github.com/repos/hyperf/amqp/zipball/dae558843dbb1b12b5f7e7a9e01af063de4be3ae",
+                "reference": "dae558843dbb1b12b5f7e7a9e01af063de4be3ae",
                 "shasum": ""
             },
             "require": {
@@ -753,7 +753,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-11-24T03:10:53+00:00"
+            "time": "2023-12-15T09:45:03+00:00"
         },
         {
             "name": "hyperf/async-queue",
@@ -7448,16 +7448,16 @@
         },
         {
             "name": "hyperf/testing",
-            "version": "v3.1.0",
+            "version": "v3.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/testing.git",
-                "reference": "a0b4f5472953ccadb4b54a39dfd6695dff5d3dcd"
+                "reference": "00be4729882b0fcc9f5307b08db635f6ad3b56cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/testing/zipball/a0b4f5472953ccadb4b54a39dfd6695dff5d3dcd",
-                "reference": "a0b4f5472953ccadb4b54a39dfd6695dff5d3dcd",
+                "url": "https://api.github.com/repos/hyperf/testing/zipball/00be4729882b0fcc9f5307b08db635f6ad3b56cc",
+                "reference": "00be4729882b0fcc9f5307b08db635f6ad3b56cc",
                 "shasum": ""
             },
             "require": {
@@ -7503,7 +7503,7 @@
                 "testing"
             ],
             "support": {
-                "source": "https://github.com/hyperf/testing/tree/v3.1.0"
+                "source": "https://github.com/hyperf/testing/tree/v3.1.3"
             },
             "funding": [
                 {
@@ -7515,7 +7515,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-11-29T03:44:48+00:00"
+            "time": "2023-12-17T08:53:12+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -7834,23 +7834,23 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "10.1.10",
+            "version": "10.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "599109c8ca6bae97b23482d557d2874c25a65e59"
+                "reference": "78c3b7625965c2513ee96569a4dbb62601784145"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/599109c8ca6bae97b23482d557d2874c25a65e59",
-                "reference": "599109c8ca6bae97b23482d557d2874c25a65e59",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/78c3b7625965c2513ee96569a4dbb62601784145",
+                "reference": "78c3b7625965c2513ee96569a4dbb62601784145",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
                 "ext-libxml": "*",
                 "ext-xmlwriter": "*",
-                "nikic/php-parser": "^4.15",
+                "nikic/php-parser": "^4.18 || ^5.0",
                 "php": ">=8.1",
                 "phpunit/php-file-iterator": "^4.0",
                 "phpunit/php-text-template": "^3.0",
@@ -7900,7 +7900,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
                 "security": "https://github.com/sebastianbergmann/php-code-coverage/security/policy",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/10.1.10"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/10.1.11"
             },
             "funding": [
                 {
@@ -7908,7 +7908,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-12-11T06:28:43+00:00"
+            "time": "2023-12-21T15:38:30+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -9906,5 +9906,5 @@
         "php": ">=8.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }

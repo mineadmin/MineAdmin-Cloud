@@ -18,6 +18,7 @@ class IndexController extends AbstractController
 {
     public function index()
     {
+        var_dump(config('databases'));
         return [
             config('nacos_config')
         ];
