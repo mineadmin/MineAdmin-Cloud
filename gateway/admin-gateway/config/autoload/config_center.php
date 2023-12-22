@@ -22,15 +22,14 @@ return [
             'driver' => Hyperf\ConfigNacos\NacosDriver::class,
             'merge_mode' => Hyperf\ConfigNacos\Constants::CONFIG_MERGE_OVERWRITE,
             'interval' => 3,
-            'default_key' => 'nacos_config',
+            'default_key' => 'admin-gateway',
             'listener_config' => [
-                // dataId, group, tenant, type, content
-                'databases' => [
-                    'tenant' => env('CONFIG_TENANT','public'), // corresponding with service.namespaceId
-                    'data_id' => env('CONFIG_DATA_ID','admin-gateway'),
-                    'group' => env('CONFIG_GROUP','mineadmin'),
-                    'type'  => 'json'
-                ]
+                'admin-gateway' =>[
+                    'tenant'    =>  env('CONFIG_TENANT'),
+                    'data_id'   =>  env('CONFIG_DATA_ID'),
+                    'group'     =>  env('CONFIG_GROUP'),
+                    'type'      =>  env('CONFIG_TYPE')
+                ],
             ],
         ],
     ],
