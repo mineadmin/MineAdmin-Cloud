@@ -13,11 +13,11 @@ return [
     // nacos server url like https://nacos.hyperf.io, Priority is higher than host:port
     // 'url' => '',
     // The nacos host info
-    'host' => '127.0.0.1',
-    'port' => 8848,
+    'host' => \Hyperf\Support\env('NACOS_HOST','127.0.0.1'),
+    'port' => \Hyperf\Support\env('NACOS_PORT',8848),
     // The nacos account info
-    'username' => null,
-    'password' => null,
+    'username' => \Hyperf\Support\env('NACOS_USER'),
+    'password' => \Hyperf\Support\env('NACOS_PWD'),
     'guzzle' => [
         'config' => null,
     ],

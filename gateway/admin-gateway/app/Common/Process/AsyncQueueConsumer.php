@@ -9,8 +9,13 @@ declare(strict_types=1);
  * @contact  group@hyperf.io
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
-return [
-    'http' => [
-        \Hyperf\Validation\Middleware\ValidationMiddleware::class
-    ],
-];
+
+namespace App\Common\Process;
+
+use Hyperf\AsyncQueue\Process\ConsumerProcess;
+use Hyperf\Process\Annotation\Process;
+
+#[Process]
+class AsyncQueueConsumer extends ConsumerProcess
+{
+}

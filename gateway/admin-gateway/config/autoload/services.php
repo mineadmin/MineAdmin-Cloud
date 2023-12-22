@@ -36,14 +36,5 @@ return [
         ],
     ],
     'consumers' => [
-        [
-            'name'  =>  'LoginService',
-            'service'   =>  \App\Service\LoginService::class,
-            'protocol'  =>  'jsonrpc-http',
-            'registry'  =>  [
-                'protocol'  =>  'nacos',
-                'address'   =>  \Hyperf\Support\env('NACOS_URL','127.0.0.1:8848')
-            ]
-        ]
     ]
 ];
