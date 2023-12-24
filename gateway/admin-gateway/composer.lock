@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5c2cde7d21a4da23f1a6c6eaa39a174c",
+    "content-hash": "530aaeb7796f313aa0621889f34cd7db",
     "packages": [
         {
             "name": "carbonphp/carbon-doctrine-types",
@@ -8320,6 +8320,61 @@
             "time": "2023-12-21T06:06:47+00:00"
         },
         {
+            "name": "xmo/mine-service",
+            "version": "2.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mineadmin/mine-service.git",
+                "reference": "9e091c187bf079c6df02932c6843a533598d3822"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mineadmin/mine-service/zipball/9e091c187bf079c6df02932c6843a533598d3822",
+                "reference": "9e091c187bf079c6df02932c6843a533598d3822",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "type": "library",
+            "extra": {
+                "hyperf": {
+                    "config": "Mine\\ServiceConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mine\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "xmo",
+                    "email": "root@imoi.cn",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Death-Satan",
+                    "email": "2771717608@qq.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "mineadmin Service package",
+            "keywords": [
+                "mineadmin",
+                "service"
+            ],
+            "support": {
+                "issues": "https://github.com/mineadmin/mine-service/issues",
+                "source": "https://github.com/mineadmin/mine-service/tree/2.0"
+            },
+            "time": "2023-12-24T08:56:26+00:00"
+        },
+        {
             "name": "zircote/swagger-php",
             "version": "4.8.2",
             "source": {
@@ -11284,7 +11339,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "xmo/jwt-auth": 20
+        "xmo/jwt-auth": 20,
+        "xmo/mine-service": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

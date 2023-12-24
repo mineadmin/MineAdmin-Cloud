@@ -5,5 +5,6 @@ return [
     'fail'      =>  '请求失败',
     'notfound'  =>  '找不到数据',
     'validated_fail'    =>  '验证失败',
-    'password_fail' =>  '密码错误'
+    'password_fail' =>  '密码错误',
+    'not_login' =>  '用户未登录'
 ];

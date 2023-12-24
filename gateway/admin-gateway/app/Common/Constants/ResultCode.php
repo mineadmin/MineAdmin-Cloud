@@ -27,4 +27,9 @@ class ResultCode extends AbstractConstants
      * @Message("notfound")
      */
     public const NOTFOUND = 404;
+
+    /**
+     * @Message("not_login")
+     */
+    public const NOT_LOGIN = 401;
 }

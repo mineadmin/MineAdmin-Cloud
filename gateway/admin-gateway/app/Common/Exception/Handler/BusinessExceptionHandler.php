@@ -7,6 +7,7 @@ use App\Common\Utils\ResultUtils;
 use Hyperf\ExceptionHandler\ExceptionHandler;
 use Swow\Psr7\Message\ResponsePlusInterface;
 use Throwable;
+use Xmo\JWTAuth\Exception\JWTException;
 
 class BusinessExceptionHandler extends ExceptionHandler
 {
@@ -18,7 +19,7 @@ class BusinessExceptionHandler extends ExceptionHandler
 
     public function isValid(Throwable $throwable): bool
     {
-        return $throwable instanceof BusinessException;
+        return ($throwable instanceof BusinessException) || ($throwable instanceof JWTException);
     }
 
 }

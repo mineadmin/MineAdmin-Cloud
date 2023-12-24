@@ -2,15 +2,30 @@
 
 namespace App\System\Service;
 
-use App\Common\Constants\ErrorCode;
-use App\Common\Constants\ResultCode;
-use App\Common\Exception\BusinessException;
-use App\System\Model\SystemUser;
-use Hyperf\Di\Annotation\Inject;
+
+use App\System\Vo\TokenDataVo;
 use Psr\SimpleCache\InvalidArgumentException;
-use Xmo\JWTAuth\JWT;
 
 interface PassportService
 {
 
+    /**
+     * @throws InvalidArgumentException
+     */
+    public function login(string $account, string $password): TokenDataVo;
+
+    /**
+     * 刷新token
+     * @param null|string $token
+     * @return TokenDataVo
+     */
+    public function refreshToken(null|string $token): TokenDataVo;
+
+    /**
+     * 退出登录
+     * @param null|string $token
+     * @return bool
+     * @throws InvalidArgumentException
+     */
+    public function logout(null|string $token): bool;
 }

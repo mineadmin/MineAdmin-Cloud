@@ -42,7 +42,8 @@
         "tangwei/apidocs": "^3.0",
         "tangwei/dto": "^3.0",
         "tangwei/knife4j-ui": "^1.0",
-        "xmo/jwt-auth": "^2.0.0-dev"
+        "xmo/jwt-auth": "^2.0.0-dev",
+        "xmo/mine-service": "2.0.x-dev"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.0",
